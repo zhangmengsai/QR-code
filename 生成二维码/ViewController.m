@@ -39,7 +39,14 @@
     
     self.myImageView.image=[self createNoInterpolatedUIImageFormCIImage:outputImage withSize:200];
 }
-
+/**
+ *  生成高清的Image
+ *
+ *  @param image 传入的图片
+ *  @param size  图片的大小
+ *
+ *  @return image
+ */
 -(UIImage * )createNoInterpolatedUIImageFormCIImage:(CIImage *)image withSize:(CGFloat )size{
 
     CGRect extent = CGRectIntegral(image.extent);
