@@ -35,7 +35,6 @@
     //4获取输出结果
     CIImage * outputImage = [fiter outputImage];
     
-   // self.myImageView.image = [UIImage imageWithCIImage:outputImage];
     
     self.myImageView.image=[self createNoInterpolatedUIImageFormCIImage:outputImage withSize:200];
 }
